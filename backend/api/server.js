@@ -11,9 +11,10 @@ const app = express();
 // CORS Configuration
 // Explicitly allow requests from your frontend's Vercel domain
 app.use(cors({
-  origin: "https://ai-travel-9ay2.vercel.app/", // Ensure no trailing slash
-  credentials: true, 
+  origin: true,
+  credentials: true,
 }));
+
 
 app.use(express.json());
 
